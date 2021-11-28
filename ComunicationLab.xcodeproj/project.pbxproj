@@ -13,7 +13,59 @@
 		08592B3D2752F53B006E830C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08592B3C2752F53B006E830C /* Preview Assets.xcassets */; };
 		08592B3F2752F53B006E830C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08592B3E2752F53B006E830C /* Persistence.swift */; };
 		08592B422752F53B006E830C /* ComunicationLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08592B402752F53B006E830C /* ComunicationLab.xcdatamodeld */; };
+		08592B4D2752F802006E830C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08592B4C2752F802006E830C /* Assets.xcassets */; };
+		08592B532752F803006E830C /* ComunicationLabWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08592B522752F803006E830C /* ComunicationLabWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08592B582752F803006E830C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08592B572752F803006E830C /* ContentView.swift */; };
+		08592B5A2752F803006E830C /* ComunicationLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08592B592752F803006E830C /* ComunicationLabApp.swift */; };
+		08592B5C2752F803006E830C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08592B5B2752F803006E830C /* ComplicationController.swift */; };
+		08592B5E2752F803006E830C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08592B5D2752F803006E830C /* Assets.xcassets */; };
+		08592B612752F803006E830C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08592B602752F803006E830C /* Preview Assets.xcassets */; };
+		08592B652752F803006E830C /* ComunicationLabWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 08592B4A2752F801006E830C /* ComunicationLabWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08592B6F2752F9DB006E830C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08592B6E2752F9DB006E830C /* ContentViewModel.swift */; };
+		08592B712752FA4C006E830C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08592B702752FA4C006E830C /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08592B542752F803006E830C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08592B2A2752F53A006E830C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08592B512752F803006E830C;
+			remoteInfo = "ComunicationLabWatch WatchKit Extension";
+		};
+		08592B632752F803006E830C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08592B2A2752F53A006E830C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08592B492752F801006E830C;
+			remoteInfo = ComunicationLabWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08592B692752F803006E830C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08592B532752F803006E830C /* ComunicationLabWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08592B6D2752F803006E830C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				08592B652752F803006E830C /* ComunicationLabWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08592B322752F53A006E830C /* ComunicationLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComunicationLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,10 +75,28 @@
 		08592B3C2752F53B006E830C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		08592B3E2752F53B006E830C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		08592B412752F53B006E830C /* ComunicationLab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComunicationLab.xcdatamodel; sourceTree = "<group>"; };
+		08592B4A2752F801006E830C /* ComunicationLabWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComunicationLabWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08592B4C2752F802006E830C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08592B522752F803006E830C /* ComunicationLabWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ComunicationLabWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08592B572752F803006E830C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08592B592752F803006E830C /* ComunicationLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunicationLabApp.swift; sourceTree = "<group>"; };
+		08592B5B2752F803006E830C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		08592B5D2752F803006E830C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08592B602752F803006E830C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08592B622752F803006E830C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08592B6E2752F9DB006E830C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		08592B702752FA4C006E830C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		08592B2F2752F53A006E830C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08592B4F2752F803006E830C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				08592B342752F53A006E830C /* ComunicationLab */,
+				08592B4B2752F801006E830C /* ComunicationLabWatch */,
+				08592B562752F803006E830C /* ComunicationLabWatch WatchKit Extension */,
 				08592B332752F53A006E830C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				08592B322752F53A006E830C /* ComunicationLab.app */,
+				08592B4A2752F801006E830C /* ComunicationLabWatch.app */,
+				08592B522752F803006E830C /* ComunicationLabWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +131,7 @@
 			children = (
 				08592B352752F53A006E830C /* ComunicationLabApp.swift */,
 				08592B372752F53A006E830C /* ContentView.swift */,
+				08592B6E2752F9DB006E830C /* ContentViewModel.swift */,
 				08592B392752F53B006E830C /* Assets.xcassets */,
 				08592B3E2752F53B006E830C /* Persistence.swift */,
 				08592B402752F53B006E830C /* ComunicationLab.xcdatamodeld */,
@@ -73,6 +148,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		08592B4B2752F801006E830C /* ComunicationLabWatch */ = {
+			isa = PBXGroup;
+			children = (
+				08592B4C2752F802006E830C /* Assets.xcassets */,
+			);
+			path = ComunicationLabWatch;
+			sourceTree = "<group>";
+		};
+		08592B562752F803006E830C /* ComunicationLabWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				08592B572752F803006E830C /* ContentView.swift */,
+				08592B702752FA4C006E830C /* ContentViewModel.swift */,
+				08592B592752F803006E830C /* ComunicationLabApp.swift */,
+				08592B5B2752F803006E830C /* ComplicationController.swift */,
+				08592B5D2752F803006E830C /* Assets.xcassets */,
+				08592B622752F803006E830C /* Info.plist */,
+				08592B5F2752F803006E830C /* Preview Content */,
+			);
+			path = "ComunicationLabWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		08592B5F2752F803006E830C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08592B602752F803006E830C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +188,51 @@
 				08592B2E2752F53A006E830C /* Sources */,
 				08592B2F2752F53A006E830C /* Frameworks */,
 				08592B302752F53A006E830C /* Resources */,
+				08592B6D2752F803006E830C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				08592B642752F803006E830C /* PBXTargetDependency */,
 			);
 			name = ComunicationLab;
 			productName = ComunicationLab;
 			productReference = 08592B322752F53A006E830C /* ComunicationLab.app */;
 			productType = "com.apple.product-type.application";
+		};
+		08592B492752F801006E830C /* ComunicationLabWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08592B6A2752F803006E830C /* Build configuration list for PBXNativeTarget "ComunicationLabWatch" */;
+			buildPhases = (
+				08592B482752F801006E830C /* Resources */,
+				08592B692752F803006E830C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08592B552752F803006E830C /* PBXTargetDependency */,
+			);
+			name = ComunicationLabWatch;
+			productName = ComunicationLabWatch;
+			productReference = 08592B4A2752F801006E830C /* ComunicationLabWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		08592B512752F803006E830C /* ComunicationLabWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08592B662752F803006E830C /* Build configuration list for PBXNativeTarget "ComunicationLabWatch WatchKit Extension" */;
+			buildPhases = (
+				08592B4E2752F803006E830C /* Sources */,
+				08592B4F2752F803006E830C /* Frameworks */,
+				08592B502752F803006E830C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ComunicationLabWatch WatchKit Extension";
+			productName = "ComunicationLabWatch WatchKit Extension";
+			productReference = 08592B522752F803006E830C /* ComunicationLabWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +245,12 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					08592B312752F53A006E830C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					08592B492752F801006E830C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					08592B512752F803006E830C = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -122,6 +269,8 @@
 			projectRoot = "";
 			targets = (
 				08592B312752F53A006E830C /* ComunicationLab */,
+				08592B492752F801006E830C /* ComunicationLabWatch */,
+				08592B512752F803006E830C /* ComunicationLabWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +285,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08592B482752F801006E830C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08592B4D2752F802006E830C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08592B502752F803006E830C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08592B612752F803006E830C /* Preview Assets.xcassets in Resources */,
+				08592B5E2752F803006E830C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -147,10 +313,35 @@
 				08592B3F2752F53B006E830C /* Persistence.swift in Sources */,
 				08592B382752F53A006E830C /* ContentView.swift in Sources */,
 				08592B362752F53A006E830C /* ComunicationLabApp.swift in Sources */,
+				08592B6F2752F9DB006E830C /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08592B4E2752F803006E830C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08592B712752FA4C006E830C /* ContentViewModel.swift in Sources */,
+				08592B5A2752F803006E830C /* ComunicationLabApp.swift in Sources */,
+				08592B582752F803006E830C /* ContentView.swift in Sources */,
+				08592B5C2752F803006E830C /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08592B552752F803006E830C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08592B512752F803006E830C /* ComunicationLabWatch WatchKit Extension */;
+			targetProxy = 08592B542752F803006E830C /* PBXContainerItemProxy */;
+		};
+		08592B642752F803006E830C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08592B492752F801006E830C /* ComunicationLabWatch */;
+			targetProxy = 08592B632752F803006E830C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		08592B432752F53B006E830C /* Debug */ = {
@@ -327,6 +518,120 @@
 			};
 			name = Release;
 		};
+		08592B672752F803006E830C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComunicationLabWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ComunicationLabWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ComunicationLabWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.erikflores.ComunicationLab.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		08592B682752F803006E830C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComunicationLabWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ComunicationLabWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ComunicationLabWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.erikflores.ComunicationLab.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		08592B6B2752F803006E830C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ComunicationLabWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = ComunicationLabWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.erikflores.ComunicationLab;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.erikflores.ComunicationLab.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		08592B6C2752F803006E830C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ComunicationLabWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = ComunicationLabWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.erikflores.ComunicationLab;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.erikflores.ComunicationLab.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +649,24 @@
 			buildConfigurations = (
 				08592B462752F53B006E830C /* Debug */,
 				08592B472752F53B006E830C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08592B662752F803006E830C /* Build configuration list for PBXNativeTarget "ComunicationLabWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08592B672752F803006E830C /* Debug */,
+				08592B682752F803006E830C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08592B6A2752F803006E830C /* Build configuration list for PBXNativeTarget "ComunicationLabWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08592B6B2752F803006E830C /* Debug */,
+				08592B6C2752F803006E830C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

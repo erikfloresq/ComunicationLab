@@ -16,6 +16,8 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
+    let viewModel = ContentViewModel()
+
     var body: some View {
         NavigationView {
             List {
@@ -35,6 +37,7 @@ struct ContentView: View {
                 ToolbarItem {
                     Button(action: addItem) {
                         Label("Add Item", systemImage: "plus")
+                        
                     }
                 }
             }
@@ -43,6 +46,7 @@ struct ContentView: View {
     }
 
     private func addItem() {
+        viewModel.session.sendMessage(["data":"erik"], replyHandler: nil, errorHandler: nil)
         withAnimation {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
